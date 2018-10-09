@@ -17,7 +17,8 @@ public class mqttTest : MonoBehaviour
     // Use this for initialization
     public void Action () 
     {
-		// create client instance 
+        // create client instance 
+        Debug.Log(IpToParse);
 		client = new MqttClient(IPAddress.Parse(IpToParse),8080 , false , null ); 
 		
 		// register to message received 
